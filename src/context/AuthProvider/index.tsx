@@ -1,6 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
 import { IAuthProvider, IContext, IUser } from "./types";
-import 'antd/dist/antd.css';
 import { LoginRequest, getUserLocalStorage, setUserLocalStorage } from "./util";
 
 export const AuthContext = createContext<IContext>({} as IContext)
