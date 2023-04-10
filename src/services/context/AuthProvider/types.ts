@@ -9,5 +9,5 @@ export interface IContext extends IUser {
 }
 
 export interface IAuthProvider {
-    childern: JSX.Element;
+    children: JSX.Element;
 }
