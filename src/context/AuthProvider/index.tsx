@@ -1,11 +1,11 @@
 import React, { createContext, useEffect, useState } from "react";
 import { IAuthProvider, IContext, IUser } from "./types";
-import Password from "antd/es/input/Password";
+import 'antd/dist/antd.css';
 import { LoginRequest, getUserLocalStorage, setUserLocalStorage } from "./util";
 
 export const AuthContext = createContext<IContext>({} as IContext)
 
-export const AutheProvider = ({ children }: IAuthProvider) => {
+export const AuthProvider = ({ children }: IAuthProvider) => {
     const [user, setUser] = useState<IUser | null>();
 
     useEffect(() => {
